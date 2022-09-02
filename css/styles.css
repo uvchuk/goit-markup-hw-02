@@ -3,14 +3,18 @@
     --paragraph-color: #757575;
     --accent-color: #2196F3;
     --page-main-color: #FFFFFF;
-    --hero-color: #2F303A;
     --sec-background-color: #F5F4FA;
+    --third-background-color: #2F303A;
     --logo-color: #000000;
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
     font-family: "Roboto", sans-serif;
+    background-color: var(--page-main-color);
 }
+
+/* Header */
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -22,7 +26,10 @@ body {
     color: var(--logo-color);
 }
 
-.logo-style {
+.logo-style,
+a.opened,
+.nlink:hover,
+.nlink:focus {
     color: var(--accent-color);
 }
 
@@ -30,7 +37,7 @@ body {
     list-style: none;
 }
 
-.link {
+.nlink {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -38,19 +45,77 @@ body {
     text-decoration: none;
 }
 
-.link:hover,
-.link:focus {
-    color: var(--accent-color);
-}
-
 .nav-link {
     color: var(--text-main-color);
 }
 
-.opened {
-    color: var(--accent-color);
-}
-
 .nav-contact {
     color: var(--paragraph-color);
+}
+
+/* Hero */
+
+.hero,
+.footer {
+    background-color: var(--third-background-color);
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--page-main-color);
+}
+
+.title {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.btn-order {
+    color: var(--page-main-color);
+    background-color: var(--accent-color);
+}
+
+/* Features */
+
+.hidden-tittle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Our team */
+
+.our-team {
+    background-color: var(--sec-background-color);
+}
+
+/* Footer */
+
+.flogo,
+.flink:hover,
+.flink:focus {
+    color: var(--page-main-color);
+}
+
+.flink {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--footer-contact-color);
+    text-decoration: none;
+    text-indent: 0;
 }

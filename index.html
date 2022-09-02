@@ -20,24 +20,26 @@
 			<nav class="nav">
 				<a class="logo" href="./index.html"><span class="logo-style">Web</span>Studio</a>
 				<ul class="nav-list list">
-					<li class="nav-item"><a href="./index.html" class="nav-link link opened">Студія</a></li>
-					<li class="nav-item"><a href="./portfolio.html" class="nav-link link">Портфоліо</a></li>
-					<li class="nav-item"><a href="#" class="nav-link link">Контакти</a></li>
+					<li class="nav-item"><a href="./index.html" class="nav-link nlink opened">Студія</a></li>
+					<li class="nav-item"><a href="./portfolio.html" class="nav-link nlink">Портфоліо</a></li>
+					<li class="nav-item"><a href="#" class="nav-link nlink">Контакти</a></li>
 				</ul>
 			</nav>
 			<ul class="contact-list list">
-				<li class="contact-item"><a href="mailto:info@devstudio.com" class="nav-contact link">info@devstudio.com</a></li>
-				<li class="contact-item"><a href="tel:+380961111111" class="nav-contact link">+38 096 111 11 11</a></li>
+				<li class="contact-item"><a href="mailto:info@devstudio.com" class="nav-contact nlink">info@devstudio.com</a></li>
+				<li class="contact-item"><a href="tel:+380961111111" class="nav-contact nlink">+38 096 111 11 11</a></li>
 			</ul>
 		</header>
 		<!-- Основний контент -->
 		<main>
-			<section>
-				<h1>Ефективні рішення для вашого бізнесу</h1>
-				<button type="button">Замовити послугу</button>
+			<!-- Hero -->
+			<section class="hero">
+				<h1 class="hero-title title">Ефективні рішення для вашого бізнесу</h1>
+				<button type="button" class="btn-order title">Замовити послугу</button>
 			</section>
-			<section>
-				<h2>Особливості</h2>
+			<!-- Features -->
+			<section class="features">
+				<h2 class="hidden-tittle">Особливості</h2>
 				<ul>
 					<li>
 						<h3>УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -57,16 +59,18 @@
 					</li>
 				</ul>
 			</section>
+			<!-- What we do -->
 			<section>
-				<h2>Чим ми займаємося</h2>
+				<h2 class="title">Чим ми займаємося</h2>
 				<ul>
 					<li><img src="images/whatwedo1.jpg" width="370" height="294" alt="Написання коду" /></li>
 					<li><img src="images/whatwedo2.jpg" width="370" height="294" alt="Адаптація для мобільних пристроїв" /></li>
 					<li><img src="images/whatwedo3.jpg" width="370" height="294" alt="Стилізація" /></li>
 				</ul>
 			</section>
-			<section>
-				<h2>Наша команда</h2>
+			<!-- Our team -->
+			<section class="our-team">
+				<h2 class="title">Наша команда</h2>
 				<ul>
 					<li>
 						<img src="images/colegue1.jpg" width="270" height="260" alt="Член команди №1" />
@@ -92,17 +96,17 @@
 			</section>
 		</main>
 		<!-- Підвал -->
-		<footer>
-			<a class="logo" href="./index.html">WebStudio</a>
+		<footer class="footer">
+			<a class="logo flogo" href="./index.html"><span class="logo-style">Web</span>Studio</a>
 			<address>
-				<ul class="address-list">
+				<ul class="address-list list">
 					<li class="address-item">
-						<a href="https://goo.gl/maps/2UuTohdzLRWrKuVo7" class="address-link" target="_blank" rel="noopener noreferrer nofollow"
+						<a href="https://goo.gl/maps/2UuTohdzLRWrKuVo7" class="address-link flink" target="_blank" rel="noopener noreferrer nofollow"
 							>м. Київ, пр-т Лесі Українки, 26</a
 						>
 					</li>
-					<li class="address-item"><a href="mailto:info@devstudio.com" class="contact-footer">info@devstudio.com</a></li>
-					<li class="address-item"><a href="tel:+380961111111" class="contact-footer">+38 096 111 11 11</a></li>
+					<li class="address-item"><a href="mailto:info@devstudio.com" class="fut-contact flink">info@devstudio.com</a></li>
+					<li class="address-item"><a href="tel:+380961111111" class="fut-contact flink">+38 096 111 11 11</a></li>
 				</ul>
 			</address>
 		</footer>
