@@ -1,10 +1,11 @@
 :root {
-    --text-main-color(color: #212121);
-    --paragraph-color(color: #757575);
-    --accent-color(color: #2196F3);
-    --page-main-color(color: #FFFFFF);
-    --hero-color(color: #2F303A);
-    --sec-background-color(color: #F5F4FA);
+    --text-main-color: #212121;
+    --paragraph-color: #757575;
+    --accent-color: #2196F3;
+    --page-main-color: #FFFFFF;
+    --hero-color: #2F303A;
+    --sec-background-color: #F5F4FA;
+    --logo-color: #000000;
 }
 
 body {
@@ -13,4 +14,43 @@ body {
 
 .logo {
     font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--logo-color);
+}
+
+.logo-style {
+    color: var(--accent-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+
+.nav-link {
+    color: var(--text-main-color);
+}
+
+.opened {
+    color: var(--accent-color);
+}
+
+.nav-contact {
+    color: var(--paragraph-color);
 }
