@@ -11,6 +11,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    color: var(--text-main-color);
     background-color: var(--page-main-color);
 }
 
@@ -80,6 +81,15 @@ a.opened,
     background-color: var(--accent-color);
 }
 
+.btn-order:hover,
+.btn-order:focus {
+    color: var(--page-main-color);
+}
+
+.btn {
+    cursor: pointer;
+}
+
 /* Features */
 
 .hidden-tittle {
@@ -95,10 +105,50 @@ a.opened,
     overflow: hidden;
 }
 
+.text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--paragraph-color);
+}
+
 /* Our team */
 
 .our-team {
     background-color: var(--sec-background-color);
+}
+
+.member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.team-speciality {
+    font-weight: 400;
+    color: var(--paragraph-color);
+}
+
+/* Projects */
+
+.project-item {
+    text-decoration: none;
+}
+
+.project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--text-main-color);
+}
+
+.project-description {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--paragraph-color);
 }
 
 /* Footer */
@@ -111,7 +161,6 @@ a.opened,
 
 .flink {
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
